@@ -1,10 +1,11 @@
-import sys 
+import sys
 import os
 import site
 
 
-"""sys.base_prefix is the original python installation"""  
+"""sys.base_prefix is the original python installation"""
 """sys.prefix is the active environment"""
+
 
 def main() -> None:
     print()
@@ -20,7 +21,7 @@ def main() -> None:
         print("To enter the construct, run:")
         print("python -m venv matrix_env")
         print("source matrix_env/bin/activate # On Unix")
-        print("matrix_env\Scripts\activate # On Windows")
+        print("matrix_env\\Scripts\activate # On Windows")
         print()
         print("Then run this program again.")
     else:
@@ -36,21 +37,6 @@ def main() -> None:
         print()
         print("Package installation path:")
         print(site.getsitepackages()[0])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
