@@ -247,6 +247,18 @@ matrix_env/
  └── pyvenv.cfg
 -m means run a module as a script so we need python3 -m venv matrix_env
 venv is a module 
+
+for ex1
+python3 loading.py should show missing dependencies and installation instructions
+then go inside a venv to run pip install -r requirements.txt
+python3 -m venv env
+source \env\bin\activate
+pip install -r requirements.txt
+to exit the env, deactivate
+or
+poetry install --no-root # for the errors
+poetry run python loading.py
+
 Go crazy:
 autopep8 --in-place --aggressive --aggressive ft_garden_management.py
 ### Instructions

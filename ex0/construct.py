@@ -9,7 +9,7 @@ import site
 
 def main() -> None:
     print()
-    if (sys.prefix == sys.base_prefix):
+    if sys.prefix == sys.base_prefix:
         print("MATRIX STATUS: You're still plugged in")
         print()
         print("Current Python:", sys.executable)
