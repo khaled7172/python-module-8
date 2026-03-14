@@ -1,9 +1,9 @@
 import os
-import sys
 from dotenv import load_dotenv
 
 """load_env to load the .env file into environment variables"""
-"""load .env file if present, does not overwrite environment variables, the ones already set take precedence"""
+"""load .env file if present, does not overwrite environment variables,
+the ones already set take precedence"""
 load_dotenv()
 
 REQUIRED_CONFIG = [
@@ -14,6 +14,7 @@ REQUIRED_CONFIG = [
     "ZION_ENDPOINT"
 ]
 
+
 def get_config():
     config = {}
     for key in REQUIRED_CONFIG:
@@ -22,7 +23,10 @@ def get_config():
             value = f"[MISSING] {key} not set"
         config[key] = value
     return config
+
+
 """Above function ensures missing variables are clearly flagged"""
+
 
 def print_config(config):
     print()
@@ -47,9 +51,11 @@ def print_config(config):
     print()
     print("The Oracle sees all configurations.")
 
+
 def main():
     config = get_config()
     print_config(config)
+
 
 if __name__ == "__main__":
     main()

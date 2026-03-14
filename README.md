@@ -259,6 +259,11 @@ or
 poetry install --no-root # for the errors
 poetry run python loading.py
 
+ex2
+enter a virtua environment then do this
+pip install python-dotenv
+
+
 Go crazy:
 autopep8 --in-place --aggressive --aggressive ft_garden_management.py
 ### Instructions
