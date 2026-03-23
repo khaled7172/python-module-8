@@ -1,4 +1,3 @@
-# python-module-8
 *This project has been created as part of the 42 curriculum by khhammou*
 
 ## Description
@@ -263,9 +262,6 @@ ex2
 enter a virtua environment then do this
 pip install python-dotenv
 
-
-Go crazy:
-autopep8 --in-place --aggressive --aggressive ft_garden_management.py
 ### Instructions
 
 You run this code by doing python3 file_name.py
